@@ -12,7 +12,7 @@ else:
             C+=1
         elif A[i]=='G':
             G+=1
-    print(T,C,G)
+    # print(T,C,G)
     if T <= C | T <= G:
         smallest = T
     elif C <= G:
@@ -24,6 +24,6 @@ else:
     C = C*C
     G = G*G
 
-    print(smallest)
+    # print(smallest)
     pts = T+C+G+(7*smallest)
     print(pts)
