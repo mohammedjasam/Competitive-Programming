@@ -1,20 +1,17 @@
 kpos=int(input())
 l=[]
 j=[]
-
 j.append(kpos)
-def findSub(l):
-    for x in (l):
-        print(x)
-        try:
-            if bool(x.index(kpos)):
-                j.append(x[0])
-        except:
-            pass
-        j.append(x[0])
-        kpos=x[0]
-    return j
 
+def findSub(l,kpos):
+    for i in range(len(l)):
+        for x in (l):
+            if x.count(kpos)==1:
+                kpos=x[0]
+                j.append(kpos)
+            else:
+                continue
+    return j
 
 while True:
     branch=[int(x) for x in input().split()]
@@ -22,7 +19,10 @@ while True:
         l.append(branch)
     else:
         break
-sub=0
-res=findSub(l)
+res=findSub(l,kpos)
 res=list(set(res))
-print(res)
+result=""
+for x in (res):
+    result+=str(x)+" "
+
+print(result)
