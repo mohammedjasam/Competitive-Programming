@@ -6,13 +6,13 @@ for i in range(h):
     seatsAvail=map(int, input().split())
     seatsAvail = sorted(i for i in seatsAvail if i >= n)
     if not seatsAvail:
-        pass
-    else:
-        cost=price*n
-    if price*n<=cost:
-        cost=price*n
-    else:
         f=0
+    else:
+        cost=price*n
+        if price*n<=cost:
+            cost=price*n
+        else:
+            f=0
 if cost<=budget:
     print(cost)
 
