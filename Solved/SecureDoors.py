@@ -9,8 +9,8 @@ for i in range(N):
             log[a]=b
             # print(log)
         else:
-            print(a+ " entered (ANAMOLY)")
-            log[a]=b
+            print(a+ " entered (ANOMALY)")
+            # log[a]=b
             # print(log)
     elif b=='exit':
         if (a in log):
@@ -22,8 +22,8 @@ for i in range(N):
                 pass
         else:
             try:
-                print(a+ " exited (ANAMOLY)")
-                del(log[a])
+                print(a+ " exited (ANOMALY)")
+                # del(log[a])
                 # print(log)
             except:
                 pass
