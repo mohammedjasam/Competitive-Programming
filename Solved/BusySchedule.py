@@ -34,8 +34,10 @@ for n in sys.stdin:
             srtList.append(x[1])
         for x in srtList:
             i=x-1
-            if M[i]==0:
-                print(str(H[i])+":"+"00"+" "+ Z[i] )
+            a=str(M[i])
+            if len(a)==1:
+                a="0"+str(M[i])
+                print(str(H[i])+":"+a+" "+ Z[i] )
             else:
                 print(str(H[i])+":"+str(M[i])+" "+ Z[i] )
         print()
