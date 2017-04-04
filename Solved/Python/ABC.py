@@ -12,3 +12,5 @@ for i in range(len(s)):
         st+=str(s[2])+ " "
 
 print(st[:-1])
+j=st[:1]
+print(j)
