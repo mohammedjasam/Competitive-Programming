@@ -5,8 +5,9 @@ tc = int(input())
 
 def checkIfWithin(x,y,x1,y1):
     a1,b1 = (x,y),(x1,y1)
-    dist= math.sqrt(sum([(a - b) ** 2 for a, b in zip(a1, b1)]))
+    dist = math.sqrt(sum([(a - b) ** 2 for a, b in zip(a1, b1)]))
     return dist
+
 
 for i in range(tc):
     ux,uy = map(float, input().split())
@@ -20,8 +21,6 @@ for i in range(tc):
             if x <=8.0:
                 canLight=True
                 break
-            else:
-                canLight=False
     if canLight==True:
         print('light a candle')
     else:
