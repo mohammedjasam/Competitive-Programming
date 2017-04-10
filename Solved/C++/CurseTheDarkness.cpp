@@ -10,7 +10,6 @@ int main(void)
 {
 	int tc,n,canLight;
 	double ux,uy,cx,cy;
-
 	cin>>tc;
 
 	while(tc--)
