@@ -1,5 +1,5 @@
-## The whole program is right but it gives a NameError after 1 right testcase! Need help!
-
+## The whole program is right but it gives a NameError after 1 right testcase! Need help, I have however, solved it in C++!
+##
 import math
 tc = int(input())
 

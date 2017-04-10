@@ -23,7 +23,6 @@ int main(void)
 			cin>>cx>>cy;
 
 			double d=sqrt(square(ux-cx) + square(uy-cy));
-			// cout<<d;
 			if (d<=8.0000000)
 			{
 				canLight++;
@@ -39,6 +38,5 @@ int main(void)
 			cout<<"curse the darkness\n";
 		}
 	}
-	// cout<<"Terminated!";
 	return 0;
 }
