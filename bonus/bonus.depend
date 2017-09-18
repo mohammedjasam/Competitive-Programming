@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1505494612 source:c:\users\stark\desktop\competitive-programming\bonus\main.cpp
+	<iostream>
+	<conio.h>
+
