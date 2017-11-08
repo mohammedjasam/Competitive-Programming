@@ -18,13 +18,19 @@ for a in actions:
         if int(a) > 0:
             current.append(childQueue[(current[-1] + int(a)) % n])
             # print(a, (current[-1] + int(a)) % n, childQueue[(current[-1] + int(a)) % n], current)
+            # print(current)
         elif int(a) < 0:
             current.append(revchildQueue[(current[-1] + int(a)) % n])
             # print(a, (current[-1] + int(a)) % n, revchildQueue[(current[-1] + int(a)) % n], current)
+            # print(current)
 
     except:
         if a[0] == "*":
-            current = current[:-int(a[1])]
+            if int(a[1]) == 0:
+                pass
+                # print(current)
+            else:
+                current = current[:-int(a[1])]
             # print(a[1], current)
             # print(Undo)
 
