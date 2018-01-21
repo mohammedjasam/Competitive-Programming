@@ -15,7 +15,7 @@ int main()
 	int height, angle;
 
 	scanf_s("%d%d", &height, &angle);
-  
+
   // using x/ sin(x) = y/ sin(y)
 	double cangle = 90 - angle;
 
@@ -27,6 +27,6 @@ int main()
 	int result = ceil(sqrt(height*height + side*side)); // finding the hypo
 
 	printf("%d", result);
-	//system("pause");
+
     return 0;
 }
